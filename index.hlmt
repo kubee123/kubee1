@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cửa Hàng Trực Tuyến</title>
+  <!-- Nhúng Tailwind CSS qua CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+
+  <!-- 1. Thanh điều hướng (Header/Navbar) -->
+  <header class="sticky top-0 z-50 bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold text-indigo-600">ShopOnline</a>
+      
+      <nav class="hidden md:flex space-x-6">
+        <a href="#" class="hover:text-indigo-600 font-medium">Trang chủ</a>
+        <a href="#products" class="hover:text-indigo-600 font-medium">Sản phẩm</a>
+        <a href="#" class="hover:text-indigo-600 font-medium">Khuyến mãi</a>
+        <a href="#" class="hover:text-indigo-600 font-medium">Liên hệ</a>
+      </nav>
+
+      <div class="flex items-center space-x-4">
+        <button class="relative bg-indigo-50 p-2 rounded-full text-indigo-600 hover:bg-indigo-100">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 100 4 2 2 0 000-4z"></path>
+          </svg>
+          <span class="absolute -top-1 -right-1 bg-red-500 text-white text-xs px-1.5 py-0.5 rounded-full">3</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. Banner chính (Hero Section) -->
+  <section class="bg-indigo-600 text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Bộ Sưu Tập Mùa Hè 2026</h1>
+      <p class="text-lg md:text-xl text-indigo-100 mb-8">Giảm giá lên đến 50% cho tất cả các sản phẩm mới nhất.</p>
+      <a href="#products" class="bg-white text-indigo-600 font-semibold px-6 py-3 rounded-lg shadow hover:bg-indigo-50 transition">
+        Xem sản phẩm ngay
+      </a>
+    </div>
+  </section>
+
+  <!-- 3. Danh sách sản phẩm -->
+  <main id="products" class="max-w-7xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-bold text-gray-900 mb-8 text-center">Sản Phẩm Nổi Bật</h2>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      
+      <!-- Card sản phẩm 1 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+        <img src="https://via.placeholder.com/300x300" alt="Sản phẩm 1" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <span class="text-xs text-indigo-600 font-semibold uppercase">Thời trang</span>
+          <h3 class="text-lg font-bold mt-1">Áo Phông Nam Premium</h3>
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-xl font-bold text-gray-900">250.000đ</span>
+            <button class="bg-indigo-600 text-white px-3 py-1.5 rounded text-sm hover:bg-indigo-700">
+              Thêm vào giỏ
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card sản phẩm 2 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+        <img src="https://via.placeholder.com/300x300" alt="Sản phẩm 2" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <span class="text-xs text-indigo-600 font-semibold uppercase">Phụ kiện</span>
+          <h3 class="text-lg font-bold mt-1">Giày Thể Thao Sneaker</h3>
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-xl font-bold text-gray-900">850.000đ</span>
+            <button class="bg-indigo-600 text-white px-3 py-1.5 rounded text-sm hover:bg-indigo-700">
+              Thêm vào giỏ
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card sản phẩm 3 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+        <img src="https://via.placeholder.com/300x300" alt="Sản phẩm 3" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <span class="text-xs text-indigo-600 font-semibold uppercase">Công nghệ</span>
+          <h3 class="text-lg font-bold mt-1">Tai Nghe Không Dây</h3>
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-xl font-bold text-gray-900">1.200.000đ</span>
+            <button class="bg-indigo-600 text-white px-3 py-1.5 rounded text-sm hover:bg-indigo-700">
+              Thêm vào giỏ
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card sản phẩm 4 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+        <img src="https://via.placeholder.com/300x300" alt="Sản phẩm 4" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <span class="text-xs text-indigo-600 font-semibold uppercase">Phụ kiện</span>
+          <h3 class="text-lg font-bold mt-1">Đồng Hồ Thời Trang</h3>
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-xl font-bold text-gray-900">1.500.000đ</span>
+            <button class="bg-indigo-600 text-white px-3 py-1.5 rounded text-sm hover:bg-indigo-700">
+              Thêm vào giỏ
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- 4. Chân trang (Footer) -->
+  <footer class="bg-gray-900 text-gray-400 py-8">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <p class="mb-2">&copy; 2026 ShopOnline. Tất cả quyền được bảo lưu.</p>
+      <p class="text-sm">Địa chỉ: Hà Nội, Việt Nam | Hotline: 0123 456 789</p>
+    </div>
+  </footer>
+
+</body>
+</html>
